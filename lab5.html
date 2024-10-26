@@ -49,17 +49,43 @@
 
   <!-- All Courses Section with Sorting and Filtering -->
   <div id="all-courses" class="section">
+    <div><h1 class="btn btn-light">Sort by</h1>
+        <h1 class="btn btn-light">filter by</h1>
+    </div>
     <!-- Sorting and Filtering for All Courses only -->
     <div class="d-flex justify-content-between align-items-center mb-4">
-      <div>
-        <button class="btn btn-light">Sort by</button>
-        <button class="btn btn-light">Filter by</button>
-        
-        <button class="btn btn-light">Categories</button>
-        <button class="btn btn-light">Progress</button>
-        <button class="btn btn-light">Instructor</button>
-      </div>
-      <div>
+        <div>
+     
+            <label for="role"></label>
+                <select id="role" required>
+                    <option value="">Recently Accessed</option>
+                    <option value="Admin">Admin</option>
+                    <option value="User">User</option>
+                    <!-- Additional roles can be added here -->
+                </select>
+                <select id="role" required>
+                    <option value="">Categories</option>
+                    <option value="Admin">Admin</option>
+                    <option value="User">User</option>
+                    <!-- Additional roles can be added here -->
+                </select>
+                <select id="role" required>
+                    <option value="">Progress</option>
+                    <option value="Admin">Admin</option>
+                    <option value="User">User</option>
+                    <!-- Additional roles can be added here -->
+                </select>
+                <select id="role" required>
+                    <option value="">Instructor</option>
+                    <option value="Admin">Admin</option>
+                    <option value="User">User</option>
+                    <!-- Additional roles can be added here -->
+                </select>
+                <button type="reset" class="reset-button">reset</button>
+                <div class="error" id="roleError"></div>
+         
+        </div>
+        <div>
         <input type="text" class="form-control" placeholder="Search my courses">
       </div>
     </div>
